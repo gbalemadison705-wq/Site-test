@@ -1,0 +1,92 @@
+{
+  "name": "mon-site-test",
+  "version": "1.0.0",
+  "description": "Site de test pour CI/CD",
+  "scripts": {
+    "test": "echo \"Tests OK\" && exit 0"
+  }
+}
+```
+
+**4.** Commit : `Ajout de package.json`
+
+**5.** Cliquez **"Commit new file"**
+
+---
+
+## 🎉 VOTRE DÉPÔT GITHUB EST PRÊT !
+
+**Vous avez maintenant** :
+```
+mon-site-test/
+├── README.md (créé par GitHub)
+├── index.html (votre site)
+└── package.json (config npm)
+```
+
+---
+
+## 🔗 ÉTAPE SUIVANTE : CONNECTER À VOTRE PLATEFORME
+
+**1.** Copiez l'URL de votre dépôt :
+```
+https://github.com/VOTRE-NOM/mon-site-test
+```
+
+**2.** Allez sur votre plateforme : **http://localhost:5173**
+
+**3.** Allez dans **"Mes Dépôts"**
+
+**4.** Cliquez **"+ Nouveau Dépôt"**
+
+**5.** Remplissez :
+- **Nom** : `mon-site-test`
+- **Description** : `Mon premier site CI/CD`
+- **URL du dépôt GitHub** : `https://github.com/VOTRE-NOM/mon-site-test` ← **VOTRE VRAIE URL**
+- **Branche** : `main`
+
+**6.** Cliquez **"Créer"**
+
+**7.** Cliquez sur le bouton vert **"Déclencher Build"** !
+
+---
+
+## 🎊 LE VRAI CI/CD VA SE LANCER !
+
+**Dans le terminal backend, vous allez voir** :
+```
+========================================
+DECLENCHEMENT MANUEL DU BUILD
+Depot ID: X
+========================================
+Build cree: #X
+========================================
+DEBUT DU BUILD #X
+========================================
+Depot: mon-site-test
+GitHub URL: https://github.com/...
+Branche: main
+
+ETAPE 1/5: CLONE DU CODE DEPUIS GITHUB
+─────────────────────────────────────────
+Clonage du depot GitHub...
+Depot clone avec succes !
+
+ETAPE 2/5: EXECUTION DU PIPELINE CI/CD
+─────────────────────────────────────────
+Etape 1/4: Validation de la structure...
+Structure validee
+Etape 2/4: Execution des tests...
+Tests OK
+Etape 3/4: Build du projet...
+Build OK
+
+ETAPE 3/5: DEPLOIEMENT
+─────────────────────────────────────────
+Site deploye: http://localhost:8000/sites/site_X
+
+========================================
+BUILD #X REUSSI !
+Duree totale: XXs
+URL du site: http://localhost:8000/sites/site_X
+========================================
